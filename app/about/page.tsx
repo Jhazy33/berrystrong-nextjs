@@ -8,7 +8,7 @@ export default function AboutPage() {
       <Header />
       <main className="flex flex-col">
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-berry-red to-berry-red-dark text-white">
+        <section className="relative py-20 bg-berry-red-dark text-white">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-oswald font-bold uppercase tracking-wider mb-4">
               About Berry Strong

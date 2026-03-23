@@ -10,8 +10,6 @@ export default function Header() {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/#services' },
-    { name: 'Testimonials', href: '/#testimonials' },
     { name: 'Contact', href: '/contact' },
     { name: 'Training Plans', href: '/training-plans' },
     { name: 'Register', href: '/registration' },
@@ -37,12 +35,12 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-black hover:text-berry-red-dark font-oswald uppercase text-sm tracking-wider transition-colors"
+                className="text-black hover:text-berry-red-dark font-oswald uppercase text-sm tracking-wider transition-colors px-2"
               >
                 {item.name}
               </Link>

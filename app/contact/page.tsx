@@ -8,7 +8,7 @@ export default function ContactPage() {
       <Header />
       <main className="flex flex-col">
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-berry-red to-berry-red-dark text-white">
+        <section className="relative py-20 bg-berry-red-dark text-white">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-oswald font-bold uppercase tracking-wider mb-4">
               Contact Us
@@ -66,7 +66,7 @@ export default function ContactPage() {
                       id="phone"
                       name="phone"
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-berry-red focus:border-transparent outline-none transition-all"
-                      placeholder="+44 1234 567890"
+                      placeholder="+1 508 555 0123"
                     />
                   </div>
 
@@ -102,7 +102,7 @@ export default function ContactPage() {
                       <div className="text-2xl mr-4">📍</div>
                       <div>
                         <h3 className="font-semibold text-gray-dark mb-1">Location</h3>
-                        <p className="text-gray-600">Plymouth, UK</p>
+                        <p className="text-gray-600">Plymouth, MA</p>
                       </div>
                     </div>
 
@@ -135,7 +135,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-berry-red to-berry-red-dark rounded-lg shadow-lg p-8 text-white text-center">
+                <div className="bg-berry-red-dark rounded-lg shadow-lg p-8 text-white text-center">
                   <h2 className="text-2xl font-oswald font-bold uppercase tracking-wider mb-4">
                     Ready to Start?
                   </h2>

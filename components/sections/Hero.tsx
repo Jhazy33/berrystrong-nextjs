@@ -3,7 +3,7 @@ import Button from '@/components/ui/Button';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-berry-red via-berry-red-dark to-gray-dark text-white pt-[86px]">
+    <section className="relative min-h-screen flex items-center justify-center bg-gray-dark text-white pt-[86px] pb-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image

@@ -31,7 +31,7 @@ export default function Button({
   const sizeStyles: Record<ButtonSize, string> = {
     sm: 'px-8 py-2.5 text-sm',
     md: 'px-10 py-3 text-base',
-    lg: 'px-14 py-4 text-lg',
+    lg: 'px-16 py-4 text-base',
   };
 
   const classes = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`.trim();

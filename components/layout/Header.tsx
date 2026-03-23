@@ -35,12 +35,12 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-10">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-black hover:text-berry-red-dark font-oswald uppercase text-sm tracking-wider transition-colors px-2"
+                className="text-black hover:text-berry-red-dark font-oswald uppercase text-sm tracking-wider transition-colors px-3 py-2"
               >
                 {item.name}
               </Link>

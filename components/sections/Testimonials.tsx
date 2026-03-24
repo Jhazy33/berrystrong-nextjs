@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Card from '@/components/ui/Card';
 
 const testimonials = [
   {
@@ -26,7 +25,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-40 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-24">
+        <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-oswald font-bold uppercase tracking-wider text-gray-dark mb-4">
             Success Stories
           </h2>
@@ -35,14 +34,14 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {testimonials.map((testimonial, index) => (
-            <Card
+            <div
               key={index}
-              className="shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-gray-100"
             >
-              <div className="flex items-center mb-4">
-                <div className="relative w-16 h-16 mr-4">
+              <div className="flex items-center mb-6">
+                <div className="relative w-20 h-20 mr-5 flex-shrink-0">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
@@ -50,21 +49,21 @@ export default function Testimonials() {
                     className="object-cover rounded-full shadow-md"
                   />
                 </div>
-                <div>
-                  <h4 className="font-oswald font-bold text-gray-dark uppercase">
+                <div className="min-w-0">
+                  <h4 className="font-oswald font-bold text-lg text-gray-dark uppercase tracking-wide">
                     {testimonial.name}
                   </h4>
-                  <div className="flex text-berry-red-dark">
+                  <div className="flex text-berry-red-dark text-lg">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <span key={i}>★</span>
                     ))}
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600 italic leading-relaxed">
-                "{testimonial.text}"
+              <p className="text-gray-600 italic leading-relaxed text-base">
+                &ldquo;{testimonial.text}&rdquo;
               </p>
-            </Card>
+            </div>
           ))}
         </div>
       </div>

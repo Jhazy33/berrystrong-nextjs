@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Card from '@/components/ui/Card';
 
 const services = [
   {
@@ -41,30 +40,32 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card
+            <div
               key={index}
-              className="shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
             >
-              <div className="relative h-48 mb-4 overflow-hidden rounded-t-lg">
+              <div className="relative h-56 overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 text-4xl bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-md">
+                <div className="absolute top-4 right-4 text-4xl bg-white/95 backdrop-blur-sm rounded-full w-16 h-16 flex items-center justify-center shadow-lg">
                   {service.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-oswald font-bold uppercase tracking-wider text-gray-dark mb-3">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {service.description}
-              </p>
-            </Card>
+              <div className="p-6">
+                <h3 className="text-xl font-oswald font-bold uppercase tracking-wider text-gray-dark mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

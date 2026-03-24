@@ -10,10 +10,10 @@ export default function Hero() {
           src="/images/working_out1_webp.webp"
           alt="Background"
           fill
-          className="object-cover opacity-30"
+          className="object-cover opacity-60"
           priority
         />
-        <div className="absolute inset-0 bg-gray-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
       </div>
 
       {/* Content */}

@@ -4,25 +4,25 @@ import Button from '@/components/ui/Button';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gray-dark text-white pt-[86px] pb-24">
-      {/* Background Image with Enhanced Overlay */}
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/working_out1_webp.webp"
           alt="Background"
           fill
-          className="object-cover opacity-40"
+          className="object-cover opacity-30"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-dark/80 via-gray-dark/70 to-gray-dark/90"></div>
+        <div className="absolute inset-0 bg-gray-dark"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-oswald font-bold uppercase tracking-wider mb-6 italic drop-shadow-2xl">
+          <h1 className="text-5xl md:text-7xl font-oswald font-bold uppercase tracking-wider mb-6 italic">
             Transform Your Body
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-light drop-shadow-lg">
+          <p className="text-xl md:text-2xl mb-8 font-light">
             Professional Fitness Training in Plymouth
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -39,25 +39,24 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+              className="shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex items-center mb-4">
                 <div className="relative w-16 h-16 mr-4">
-                  <div className="absolute inset-0 rounded-full shadow-lg"></div>
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
                     fill
-                    className="object-cover rounded-full"
+                    className="object-cover rounded-full shadow-md"
                   />
                 </div>
                 <div>
-                  <h4 className="font-oswald font-bold text-gray-dark uppercase text-lg">
+                  <h4 className="font-oswald font-bold text-gray-dark uppercase">
                     {testimonial.name}
                   </h4>
-                  <div className="flex text-berry-red-dark text-lg">
+                  <div className="flex text-berry-red-dark">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={i} className="drop-shadow-sm">★</span>
+                      <span key={i}>★</span>
                     ))}
                   </div>
                 </div>

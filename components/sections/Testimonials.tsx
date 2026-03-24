@@ -24,9 +24,9 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-32 bg-white">
+    <section id="testimonials" className="py-40 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-20">
+        <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl font-oswald font-bold uppercase tracking-wider text-gray-dark mb-4">
             Success Stories
           </h2>
@@ -35,7 +35,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}

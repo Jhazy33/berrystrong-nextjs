@@ -7,7 +7,7 @@ import Button from '@/components/ui/Button';
 const plans = [
   {
     name: 'Starter',
-    price: '£50/month',
+    price: '$50/month',
     description: 'Perfect for beginners starting their fitness journey',
     features: [
       'Custom workout plan',
@@ -20,7 +20,7 @@ const plans = [
   },
   {
     name: 'Professional',
-    price: '£100/month',
+    price: '$100/month',
     description: 'Ideal for committed individuals seeking serious results',
     features: [
       'Everything in Starter',
@@ -35,7 +35,7 @@ const plans = [
   },
   {
     name: 'Elite',
-    price: '£200/month',
+    price: '$200/month',
     description: 'Maximum support for achieving your ultimate goals',
     features: [
       'Everything in Professional',

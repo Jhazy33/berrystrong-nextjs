@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: 'What training plans do you offer?',
-    answer: 'We offer three comprehensive training plans: Starter (£50/month), Professional (£100/month), and Elite (£200/month). Each plan is designed to provide different levels of support based on your needs and budget.',
+    answer: 'We offer three comprehensive training plans: Starter ($50/month), Professional ($100/month), and Elite ($200/month). Each plan is designed to provide different levels of support based on your needs and budget.',
   },
   {
     question: 'Do you offer online coaching?',
